@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+    <style>
+      /* Define keyframes for glitch effect */
+      @keyframes glitch {
+        0% {
+          transform: translate(0);
+        }
+        20% {
+          transform: translate(-5px, 5px);
+        }
+        40% {
+          transform: translate(5px, -5px);
+        }
+        60% {
+          transform: translate(-5px, 5px);
+        }
+        80% {
+          transform: translate(5px, -5px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+
+      /* Apply glitch animation to image */
+      .glitch-img {
+        animation: glitch 3s infinite;
+      }
+    </style>
+    <script src="script.js"></script>
+
+    <title>Portfolio Website | Nebu C</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="./assets/61150 (1).jpg">Nebu C Thomas</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Nebu C Thomas<br />a</span> CSE Student
+          </h1>
+          <p class="description">
+            Welcome to my portfolio! I'm a Computer Science student skilled in full-stack web development, mobile app development, machine learning, Linux, and cloud computing. Proficient in JavaScript, Python, and Java, I create dynamic web applications and excel in mobile app development. With a passion for optimizing systems, I specialize in Linux and deploy scalable applications using cloud platforms. Committed to continuous learning, I'm prepared to innovate and excel in the tech industry.
+          </p>
+          <div class="action__btns">
+            <a href="contact.html" target="_blank" class="hire__me">Hire Me!</a>
+            <button class="portfolio" onclick="downloadResume()">Download Resume</button>
+            <a href="https://www.linkedin.com/in/nebucthomas2003/" target="_blank" class="hire__me">LinkedIn</a>
+            <a href="https://github.com/nebucthomas2003" target="_blank" class="hire__me">GitHub</a>
+        </div>
+        </div>
+        <div class="image">
+          <img src="./assets/20240404_133812.jpg" alt="profile" class="glitch-img" />
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <h2>Redhat Student Ambassador</h2>
+            <p>Join me in exploring the world of open source with Red Hat!</p>
+          </div>
+          <div class="box">
+            <h2>Vice President English Literary Club</h2>
+            <p>Unleash your creativity and dive into the world of literature!</p>
+          </div>
+          <div class="box">
+            <h2>Web Dev Lead</h2>
+            <p>Let's build amazing web experiences together!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

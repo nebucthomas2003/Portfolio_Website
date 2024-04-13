@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Nebu C Thomas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="transition.js"></script>
+  <style>
+    /* Define keyframes for glitch effect */
+    @keyframes glitch {
+      0% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-5px, 5px);
+      }
+      40% {
+        transform: translate(5px, -5px);
+      }
+      60% {
+        transform: translate(-5px, 5px);
+      }
+      80% {
+        transform: translate(5px, -5px);
+      }
+      100% {
+        transform: translate(0);
+      }
+    }
+
+    /* Apply glitch animation to image */
+    .glitch-img {
+      animation: glitch 3s infinite;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav__content">
+      <div class="logo"><a href="./assets/61150 (1).jpg">Nebu C Thomas</a></div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="section__container">
+      <div class="content">
+        <p class="subtitle">ABOUT</p>
+        <h1 class="title">
+          More About Me
+        </h1>
+        <p class="description">
+            I am a passionate and enthusiastic learner with a keen interest in technology, particularly in the fields of web development, app development, Linux systems, cloud computing, and machine learning. With a relentless curiosity and a drive for continuous improvement, I am dedicated to mastering these domains and staying abreast of the latest advancements and trends.
+        </p>
+        <p class="description">
+            My learning journey is fueled by an insatiable curiosity and a relentless pursuit of excellence. I thrive on challenges and find joy in delving into new technologies, constantly seeking opportunities to broaden my horizons and refine my skills.
+            I am currently the Red Hat Academy Student Ambassador , Web Development Domain Led and Vice President of English Literary Club at my college.
+        </p>
+        
+      </div>
+      <div class="image">
+        <img src="./assets/20240404_133812.jpg" alt="about image" class="glitch-img">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
