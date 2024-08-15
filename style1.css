@@ -90,6 +90,8 @@ ul li a:hover {
 
 .section {
   background-color: var(--extra-light);
+  background-color: var(--extra-light);
+  margin-top: 50px; /* Reduced top margin */
 }
 
 .section__container {

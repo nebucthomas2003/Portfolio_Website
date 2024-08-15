@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    
+
     <style>
       /* Define keyframes for glitch effect */
       @keyframes glitch {
@@ -37,6 +37,26 @@
       .glitch-img {
         animation: glitch 3s infinite;
       }
+
+      /* Footer Styling */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
     </style>
     <script src="script.js"></script>
 
@@ -53,7 +73,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Works</a></li>
+          <li><a href="project.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -63,17 +83,23 @@
         <div class="content">
           <p class="subtitle">HELLO</p>
           <h1 class="title">
-            I'm <span>Nebu C Thomas<br />a</span> CSE Student
+            I'm <span>Nebu C Thomas<br />a</span> Software Developer
           </h1>
           <p class="description">
-            Welcome to my portfolio! I'm a Computer Science student skilled in full-stack web development,Java development, Linux,Database Management, and cloud computing. Proficient in Java, I create dynamic web applications . With a passion for optimizing systems, I specialize in Linux and deploy scalable applications using cloud platforms. Committed to continuous learning, I'm prepared to innovate and excel in the tech industry.
+            Welcome to my portfolio! I'm a Software Developer skilled in Java
+            Development, Azure DevOps, Web Development, Linux ,Database
+            Management. Proficient in Java, I create dynamic web applications.
+            With a passion for optimizing systems, I specialize in Linux and
+            deploy scalable applications using cloud platforms. Committed to
+            continuous learning, I'm prepared to innovate and excel in the tech
+            industry.
           </p>
           <div class="action__btns">
             <a href="contact.html" target="_blank" class="hire__me">Hire Me!</a>
             <button class="portfolio" onclick="downloadResume()">Download Resume</button>
             <a href="https://www.linkedin.com/in/nebucthomas2003/" target="_blank" class="hire__me">LinkedIn</a>
             <a href="https://github.com/nebucthomas2003" target="_blank" class="hire__me">GitHub</a>
-        </div>
+          </div>
         </div>
         <div class="image">
           <img src="./assets/20240404_133812.jpg" alt="profile" class="glitch-img" />
@@ -94,5 +120,13 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer__container">
+        <p>&copy; 2024 Nebu C Thomas. All Rights Reserved.</p>
+        <p>Contact: <a href="mailto:nebucthomas2003@gmail.com">nebucthomas2003@gmail.com</a></p>
+      </div>
+    </footer>
   </body>
 </html>
