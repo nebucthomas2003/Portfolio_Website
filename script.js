@@ -1,5 +1,5 @@
 function downloadResume() {
-  const resumeUrl = './assets/OriginalResume.pdf'; 
+  const resumeUrl = './assets/NEBU C THOMAS 2025.PDF'; 
   const link = document.createElement('a');
   link.href = resumeUrl;
   link.download = 'NebuCThomas.pdf'; 
