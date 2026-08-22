@@ -1,0 +1,100 @@
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.aurora__blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  mix-blend-mode: multiply;
+  will-change: transform;
+}
+
+.aurora__blob--a {
+  width: 560px;
+  height: 560px;
+  top: -140px;
+  left: -120px;
+  background: radial-gradient(circle at 30% 30%, rgba(22, 48, 92, 0.22), transparent 70%);
+  animation: drift-a 22s ease-in-out infinite;
+}
+
+.aurora__blob--b {
+  width: 480px;
+  height: 480px;
+  top: 30%;
+  right: -160px;
+  background: radial-gradient(circle at 60% 40%, rgba(20, 23, 26, 0.12), transparent 70%);
+  animation: drift-b 26s ease-in-out infinite;
+}
+
+.aurora__blob--c {
+  width: 420px;
+  height: 420px;
+  bottom: -160px;
+  left: 20%;
+  background: radial-gradient(circle at 50% 50%, rgba(22, 48, 92, 0.16), transparent 70%);
+  animation: drift-c 30s ease-in-out infinite;
+}
+
+@keyframes drift-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(110px, 130px) scale(1.15); }
+  66% { transform: translate(-60px, 70px) scale(0.9); }
+}
+
+@keyframes drift-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-130px, -90px) scale(1.18); }
+}
+
+@keyframes drift-c {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  40% { transform: translate(90px, -80px) scale(1.12); }
+  70% { transform: translate(-80px, 40px) scale(0.88); }
+}
+
+.aurora__lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.aurora__path {
+  stroke: #16305c;
+  stroke-width: 1;
+  opacity: 0.12;
+  stroke-dasharray: 6 10;
+  animation: line-drift 60s linear infinite;
+}
+
+.aurora__path--2 {
+  stroke: #14171a;
+  opacity: 0.08;
+  animation-duration: 75s;
+  animation-direction: reverse;
+}
+
+@keyframes line-drift {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -800; }
+}
+
+@media (max-width: 720px) {
+  .aurora__blob--a, .aurora__blob--b, .aurora__blob--c {
+    filter: blur(60px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora__blob,
+  .aurora__path {
+    animation: none;
+  }
+}

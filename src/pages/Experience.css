@@ -1,0 +1,250 @@
+.exp__title {
+  font-size: clamp(38px, 5vw, 56px);
+  margin: 14px 0 48px;
+}
+
+.exp__section h3 {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: var(--font-body);
+  color: var(--ink);
+}
+
+.exp__edu-institution {
+  color: var(--ink);
+  margin-top: 6px;
+  font-size: 15.5px;
+}
+
+.exp__edu-detail {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.exp__edu-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.exp__edu-role {
+  font-size: 13px;
+  color: var(--muted);
+  background: var(--paper-alt);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.exp__edu-role--special {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  color: #7a1f1f;
+  background: transparent;
+  border: none;
+  padding: 4px 6px;
+  letter-spacing: 0.01em;
+  transform: skewX(-6deg);
+  display: inline-block;
+}
+
+.exp__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.exp__card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px;
+  background: var(--paper-alt);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.exp__card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.exp__entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.exp__entry-org {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.exp__entry-period {
+  font-size: 12.5px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.exp__block {
+  margin-top: 18px;
+}
+
+.exp__block-label {
+  font-size: 11px;
+  color: var(--accent);
+  text-transform: lowercase;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.exp__block p {
+  color: var(--ink);
+  font-size: 14.5px;
+  line-height: 1.65;
+  max-width: 640px;
+}
+
+.exp__entry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.exp__link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 12.5px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+
+.exp__link:hover {
+  opacity: 0.7;
+}
+
+.exp__certificate {
+  margin-top: 20px;
+}
+
+.exp__certificate-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  margin-top: 6px;
+}
+
+.exp__certificate--empty .exp__certificate-img {
+  display: none;
+}
+
+.exp__certificate--empty::after {
+  content: 'certificate.jpg';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  height: 180px;
+  border-radius: 8px;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.exp__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.exp__list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+
+.exp__list--simple li {
+  display: block;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.exp__list-title {
+  color: var(--ink);
+}
+
+.exp__list-detail {
+  color: var(--muted);
+  font-size: 13.5px;
+  text-align: right;
+}
+
+.exp__lang-level {
+  color: var(--muted);
+  font-size: 12px;
+  display: block;
+  margin-top: 4px;
+}
+
+.exp__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.exp__pub-title {
+  font-size: 15.5px;
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+.exp__pub-detail {
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 600px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.exp__pub-meta {
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-top: 10px;
+}
+
+@media (max-width: 640px) {
+  .exp__grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .exp__list li {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .exp__list-detail {
+    text-align: left;
+  }
+
+  .exp__card {
+    padding: 20px;
+  }
+}
