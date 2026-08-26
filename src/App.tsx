@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import Aurora from './components/Aurora';
 import Home from './pages/Home';
 import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

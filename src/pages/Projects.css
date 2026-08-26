@@ -1,0 +1,137 @@
+.proj__title {
+  font-size: clamp(38px, 5vw, 56px);
+  margin: 14px 0 12px;
+}
+
+.proj__intro {
+  color: var(--muted);
+  font-size: 15.5px;
+  max-width: 520px;
+  margin-bottom: 56px;
+}
+
+.proj__timeline {
+  position: relative;
+}
+
+.proj__spine {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 7px;
+  width: 1px;
+  background: var(--line);
+}
+
+.proj__row {
+  position: relative;
+  display: flex;
+  gap: 28px;
+  padding-bottom: 44px;
+}
+
+.proj__row:last-child {
+  padding-bottom: 0;
+}
+
+.proj__node {
+  position: relative;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--accent);
+  margin-top: 6px;
+  z-index: 1;
+}
+
+.proj__card {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px 26px;
+  background: var(--paper-alt);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.proj__card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.proj__card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.proj__card-head h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.proj__field {
+  display: block;
+  font-size: 11px;
+  color: var(--accent);
+  margin-top: 4px;
+}
+
+.proj__date {
+  font-size: 12.5px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.proj__summary {
+  color: var(--ink);
+  font-size: 14.5px;
+  line-height: 1.65;
+  margin-top: 16px;
+  max-width: 620px;
+}
+
+.proj__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.proj__link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 12.5px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+
+.proj__link:hover {
+  opacity: 0.7;
+}
+
+.proj__link--pending {
+  color: var(--muted);
+  border-bottom-color: var(--line);
+}
+
+@media (max-width: 640px) {
+  .proj__row {
+    gap: 18px;
+  }
+
+  .proj__card {
+    padding: 20px;
+  }
+
+  .proj__card-head h3 {
+    font-size: 20px;
+  }
+}

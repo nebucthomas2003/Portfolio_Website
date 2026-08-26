@@ -35,6 +35,10 @@ export const homeHighlights = [
     value: 'Building Folio — an AI document Q&A tool — under my dev brand, Graphia',
   },
   {
+    label: 'shipped',
+    value: 'sysscope — an open-source Linux system diagnostics CLI, published on GitHub',
+  },
+  {
     label: 'experience',
     value: 'Freelance developer at Mavano Sports Academy — built and shipped their live website end-to-end',
   },
@@ -73,6 +77,18 @@ export const experience = [
     tools: ['Next.js', 'TypeScript', 'Claude API', 'RAG', 'pgvector', 'Supabase', 'Cloudflare R2', 'Tavily', 'Vercel'],
   },
   {
+    title: 'Creator & Developer',
+    org: 'sysscope',
+    period: '2026',
+    problem:
+      'Wanted a fast way to see what a Linux machine is doing right now — CPU, memory, disk, processes, services — without installing a monitoring agent or daemon.',
+    solution:
+      'Built sysscope, a zero-dependency Python CLI that reads directly from /proc, /sys, dpkg, and systemctl, and prints either a clean terminal table or JSON for scripting. Designed to never crash on missing data (works on minimal containers and non-systemd hosts) and packaged for Snap with strict confinement.',
+    tools: ['Python', 'Rich', 'argparse', 'Snapcraft'],
+    link: 'https://github.com/nebucthomas2003/sysscope',
+    linkLabel: 'github.com/nebucthomas2003/sysscope',
+  },
+  {
     title: 'Freelance Developer',
     org: 'Mavano Sports Academy',
     period: 'Jan — Apr 2026',
@@ -96,7 +112,88 @@ export const experience = [
       'Applied ML/NLP internship focused on text summarization research, using LSTM networks to compare deep-learning approaches against traditional NLP methods.',
     outcome: 'Co-authored an IEEE conference paper based on this work — published at ICSCDS 2025.',
     tools: ['Python', 'NLP', 'Machine Learning', 'LSTM'],
+    link: 'https://github.com/nebucthomas2003/Text_Summarization',
+    linkLabel: 'github.com/nebucthomas2003/Text_Summarization',
     certificatePath: `${import.meta.env.BASE_URL}assets/infosys-certificate.jpg`,
+  },
+];
+
+export const roadmapProjects = [
+  {
+    name: 'Folio by Graphia',
+    field: 'AI / Web Development',
+    date: '2026 — ongoing',
+    link: '',
+    linkLabel: '',
+    tools: ['Next.js', 'TypeScript', 'Claude API', 'RAG', 'pgvector', 'Supabase', 'Cloudflare R2', 'Tavily', 'Vercel'],
+    summary:
+      'AI-powered document summarizer and Q&A tool that answers questions using both an uploaded document and live web search — built with a full SRS, architecture docs, API spec, test plan, and CI/CD from day one.',
+  },
+  {
+    name: 'sysscope',
+    field: 'Systems / DevOps',
+    date: 'Aug 2026',
+    link: 'https://github.com/nebucthomas2003/sysscope',
+    linkLabel: 'github.com/nebucthomas2003/sysscope',
+    tools: ['Python', 'Rich', 'argparse', 'pytest', 'GitHub Actions', 'Snapcraft'],
+    summary:
+      'Zero-dependency Python CLI for Linux system diagnostics — reports CPU, memory, disk, top processes, package count, and running services as a table or JSON, reading directly from /proc, /sys, dpkg, and systemctl. Published live on the Snap Store, plus pip and Debian (.deb) packages, with a pytest suite and GitHub Actions CI running across Python 3.9–3.12 on every push.',
+  },
+  {
+    name: 'Mavano Sports Academy',
+    field: 'Web Development',
+    date: 'Apr 2026',
+    link: 'https://mavanosportsacademy.com',
+    linkLabel: 'mavanosportsacademy.com',
+    tools: ['TypeScript', 'Node.js', 'React'],
+    summary:
+      'Live sports management website built and owned end-to-end for a freelance client — from architecture to deployment and handover.',
+  },
+  {
+    name: 'Salon Management System',
+    field: 'Software Development',
+    date: 'TBD',
+    link: 'https://github.com/nebucthomas2003/Salon-Management-System',
+    linkLabel: 'github.com/nebucthomas2003/Salon-Management-System',
+    tools: ['Java', 'MySQL'],
+    summary: 'Web-based salon management system for appointment booking, billing, and customer management.',
+  },
+  {
+    name: 'Text Summarization',
+    field: 'AI / Machine Learning',
+    date: 'Aug 2024 — Aug 2025',
+    link: 'https://github.com/nebucthomas2003/Text_Summarization',
+    linkLabel: 'github.com/nebucthomas2003/Text_Summarization',
+    tools: ['Python', 'NLP', 'Machine Learning', 'LSTM'],
+    summary:
+      'Extended internship research into a standalone system combining extractive and transformer-based abstractive summarization, with automated preprocessing and ROUGE-benchmarked evaluation — later co-authored as an IEEE conference paper (ICSCDS 2025).',
+  },
+  {
+    name: 'Nutritional Meal Planner',
+    field: 'Machine Learning',
+    date: 'Mar 2024',
+    link: 'https://github.com/nebucthomas2003/Nutritional_Meal_Planer-ML',
+    linkLabel: 'github.com/nebucthomas2003/Nutritional_Meal_Planer-ML',
+    tools: ['HTML/CSS', 'JavaScript', 'SQL', 'ML'],
+    summary: 'Machine learning-based web app that recommends meal plans.',
+  },
+  {
+    name: 'DevOps Practice',
+    field: 'DevOps',
+    date: 'Jun 2024',
+    link: 'https://github.com/nebucthomas2003/devops_practice',
+    linkLabel: 'github.com/nebucthomas2003/devops_practice',
+    tools: ['DevOps', 'CI/CD'],
+    summary: 'Hands-on practice repo for DevOps tooling and workflows.',
+  },
+  {
+    name: 'Java Cheat Sheet',
+    field: 'Reference / Learning',
+    date: 'Aug 2024',
+    link: 'https://github.com/nebucthomas2003/Java_CheatSheet',
+    linkLabel: 'github.com/nebucthomas2003/Java_CheatSheet',
+    tools: ['Java'],
+    summary: 'Quick-reference notes and code snippets for Java syntax and core concepts.',
   },
 ];
 

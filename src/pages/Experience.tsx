@@ -101,6 +101,8 @@ export default function Experience() {
 
       <hr className="divider" />
 
+      <hr className="divider" />
+
       <Reveal>
         <section className="exp__section">
           <span className="section-label">
